@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Vacinação</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulário de Vacinação Contra Covid-19</h1>
+      <p>Faça aqui o seu pré-cadastro de vacinação</p>
+    </header>
+
+    <main>
+      <form>
+        <div>
+          <label for="name">Nome</label>
+          <input
+            id="name"
+            name="nome"
+            placeholder="Escreva seu nome completo"
+            type="text"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">E-mail</label>
+          <input
+            id="email"
+            name="nome"
+            placeholder="Escreva seu nome completo"
+            type="email"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="number">Idade</label>
+          <input
+            type="number"
+            id="number"
+            min="6"
+            max="100"
+            name="idade"
+            placeholder="idade"
+          />
+        </div>
+
+        <div>
+          <label for="diseases">Possui alguma doença pré-existente?</label>
+          <select name="diseases" id="diseases" required>
+            <option value="cancer">Câncer</option>
+            <option value="cardiopatia">Cardiopatia</option>
+            <option value="diabetes">Diabetes</option>
+            <option value="hipertensao">Hipertensão</option>
+            <option value="refluxo">Refluxo</option>
+            <option value="tetraplegia">Tetraplegia ou Paraplegia</option>
+            <option value="outros">Outros</option>
+            <option value="nao">Não possuo nenhuma das doenças citadas</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="carteira">Sua caderneta de vacinação está em dia?</label>
+          <select name="carteira" id="carteira" required>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+        </div>
+
+        <div>
+          <p>
+            Quais outras medidas você defende evitar a contaminação por
+            Covid-19?
+          </p>
+          <span> (marque todas as opções que você acredita) </span>
+
+          <label>
+            <input name="medidas" value="uso-de-mascaras" type="checkbox" />
+            Uso de Máscaras PFF2
+          </label>
+
+          <label>
+            <input
+              name="medidas"
+              value="distanciamento-social"
+              type="checkbox"
+            />
+            Distanciamento Social
+          </label>
+
+          <label>
+            <input name="medidas" value="alcool-gel" type="checkbox" />
+            Álcool Gel
+          </label>
+
+          <label>
+            <input name="medidas" value="defender-sus" type="checkbox" />
+            Defender o SUS e o Zé Gotinha
+          </label>
+
+          <label>
+            <input name="medidas" value="combater-negacionismo" type="checkbox" />
+            Combater o negacionismo e as fake news
+          </label>
+
+        </div>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>
