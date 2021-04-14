@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <link rel="stylesheet" href="./style.css">
     <title>Formulario de Vacinação</title>
   </head>
   <body>
@@ -92,7 +93,8 @@
           </label>
 
           <label>
-            <input name="medidas" value="alcool-gel" type="checkbox" />
+            <input name="medidas" value="alcool-gel" type="checkbox"         
+            />
             Álcool Gel
           </label>
 
@@ -105,11 +107,28 @@
             <input name="medidas" value="combater-negacionismo" type="checkbox" />
             Combater o negacionismo e as fake news
           </label>
-
         </div>
+
+        <div>
+            <label for="number">Algum comentário ou sugestão?</label>
+            <textarea 
+                name="comentarios" 
+                id="comentarios" 
+                placeholder="Deixe seu comentário"
+            ></textarea>
+        </div>
+
+        <div>
+            <button type="submit" id="submit">
+                Enviar
+            </button>
+        </div>
+
       </form>
     </main>
 
     <footer></footer>
   </body>
 </html>
+
+
