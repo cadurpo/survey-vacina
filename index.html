@@ -8,124 +8,149 @@
     <title>Formulario de Vacinação</title>
   </head>
   <body>
-    <header>
-      <h1>Formulário de Vacinação Contra Covid-19</h1>
-      <p>Faça aqui o seu pré-cadastro de vacinação</p>
-    </header>
-
-    <main>
-      <form>
-        <div>
-          <label for="name">Nome</label>
-          <input
-            id="name"
-            name="nome"
-            placeholder="Escreva seu nome completo"
-            type="text"
-            required
-          />
-        </div>
-
-        <div>
-          <label for="email">E-mail</label>
-          <input
-            id="email"
-            name="nome"
-            placeholder="Escreva seu nome completo"
-            type="email"
-            required
-          />
-        </div>
-
-        <div>
-          <label for="number">Idade</label>
-          <input
-            type="number"
-            id="number"
-            min="6"
-            max="100"
-            name="idade"
-            placeholder="idade"
-          />
-        </div>
-
-        <div>
-          <label for="diseases">Possui alguma doença pré-existente?</label>
-          <select name="diseases" id="diseases" required>
-            <option value="cancer">Câncer</option>
-            <option value="cardiopatia">Cardiopatia</option>
-            <option value="diabetes">Diabetes</option>
-            <option value="hipertensao">Hipertensão</option>
-            <option value="refluxo">Refluxo</option>
-            <option value="tetraplegia">Tetraplegia ou Paraplegia</option>
-            <option value="outros">Outros</option>
-            <option value="nao">Não possuo nenhuma das doenças citadas</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="carteira">Sua caderneta de vacinação está em dia?</label>
-          <select name="carteira" id="carteira" required>
-            <option value="sim">Sim</option>
-            <option value="nao">Não</option>
-          </select>
-        </div>
-
-        <div>
-          <p>
-            Quais outras medidas você defende evitar a contaminação por
-            Covid-19?
-          </p>
-          <span> (marque todas as opções que você acredita) </span>
-
-          <label>
-            <input name="medidas" value="uso-de-mascaras" type="checkbox" />
-            Uso de Máscaras PFF2
-          </label>
-
-          <label>
+    <div class="container">
+      <header class="header">
+        <h1 class="text-center">Formulário de Vacinação Contra Covid-19</h1>
+        <p class="description text-center">Faça aqui o seu pré-cadastro de vacinação</p>
+      </header>
+      <main>
+        <form>
+          <div class="form-group">
+            <label for="name">Nome</label>
             <input
-              name="medidas"
-              value="distanciamento-social"
-              type="checkbox"
+              id="name"
+              name="nome"
+              placeholder="Escreva seu nome completo"
+              type="text"
+              class="form-control"
+              required
             />
-            Distanciamento Social
-          </label>
+          </div>
 
-          <label>
-            <input name="medidas" value="alcool-gel" type="checkbox"         
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              id="email"
+              name="nome"
+              placeholder="Escreva seu nome completo"
+              type="email"
+              class="form-control"
+              required
             />
-            Álcool Gel
-          </label>
+          </div>
 
-          <label>
-            <input name="medidas" value="defender-sus" type="checkbox" />
-            Defender o SUS e o Zé Gotinha
-          </label>
+          <div class="form-group">
+            <label for="number">Idade</label>
+            <input
+              type="number"
+              id="number"
+              min="6"
+              max="100"
+              name="idade"
+              class="form-control"
+              placeholder="idade"
+            />
+          </div>
 
-          <label>
-            <input name="medidas" value="combater-negacionismo" type="checkbox" />
-            Combater o negacionismo e as fake news
-          </label>
-        </div>
+          <div class="form-group">
+            <label for="diseases">Possui alguma doença pré-existente?</label>
+            <select name="diseases" id="diseases" class="form-control" required>
+              <option value="cancer">Câncer</option>
+              <option value="cardiopatia">Cardiopatia</option>
+              <option value="diabetes">Diabetes</option>
+              <option value="hipertensao">Hipertensão</option>
+              <option value="refluxo">Refluxo</option>
+              <option value="tetraplegia">Tetraplegia ou Paraplegia</option>
+              <option value="outros">Outros</option>
+              <option value="nao">Não possuo nenhuma das doenças citadas</option>
+            </select>
+          </div>
 
-        <div>
-            <label for="number">Algum comentário ou sugestão?</label>
-            <textarea 
-                name="comentarios" 
-                id="comentarios" 
-                placeholder="Deixe seu comentário"
-            ></textarea>
-        </div>
+          <div class="form-group">
+            <label for="carteira">Sua caderneta de vacinação está em dia?</label>
+            <select name="carteira" id="carteira" class="form-control" required>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+          </div>
 
-        <div>
-            <button type="submit" id="submit">
-                Enviar
-            </button>
-        </div>
+          <div>
+            <p>
+              Quais outras medidas você defende evitar a contaminação por
+              Covid-19?
+            </p>
+            <span> (marque todas as opções que você acredita) </span>
 
-      </form>
-    </main>
+            <label>
+              <input 
+                name="medidas" 
+                value="uso-de-mascaras" 
+                type="checkbox" 
+                class="input-checkbox"
+              />
+              Uso de Máscaras PFF2
+            </label>
+
+            <label>
+              <input
+                name="medidas"
+                value="distanciamento-social"
+                type="checkbox"
+                class="input-checkbox"
+              />
+              Distanciamento Social
+            </label>
+
+            <label>
+              <input 
+                name="medidas" 
+                value="alcool-gel" 
+                type="checkbox" 
+                class="input-checkbox"         
+              />
+              Álcool Gel
+            </label>
+
+            <label>
+              <input 
+                name="medidas" 
+                value="defender-sus" 
+                type="checkbox" 
+                class="input-checkbox"
+              />
+              Defender o SUS e o Zé Gotinha
+            </label>
+
+            <label>
+              <input 
+                name="medidas" 
+                value="combater-negacionismo" 
+                type="checkbox" 
+                class="input-checkbox"
+              />
+              Combater o negacionismo e as fake news
+            </label>
+          </div>
+
+          <div class="form-group">
+              <label for="number">Algum comentário ou sugestão?</label>
+              <textarea 
+                  name="comentarios" 
+                  class="input-textarea"
+                  id="comentarios" 
+                  placeholder="Deixe seu comentário"
+              ></textarea>
+          </div>
+
+          <div>
+              <button type="submit" id="submit" class="submit-button">
+                  Enviar
+              </button>
+          </div>
+
+        </form>
+      </main>
+    </div>
 
     <footer></footer>
   </body>
