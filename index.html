@@ -11,7 +11,7 @@
     <div class="container">
       <header class="header">
         <h1 class="text-center">Formulário de Vacinação Contra Covid-19</h1>
-        <p class="description text-center">Faça aqui o seu pré-cadastro de vacinação</p>
+        <p class="description text-center">Faça aqui o seu pré-cadastro</p>
       </header>
       <main>
         <form>
@@ -48,7 +48,7 @@
               max="100"
               name="idade"
               class="form-control"
-              placeholder="idade"
+              placeholder="coloque a sua idade"
             />
           </div>
 
@@ -58,7 +58,7 @@
               <option value="cancer">Câncer</option>
               <option value="cardiopatia">Cardiopatia</option>
               <option value="diabetes">Diabetes</option>
-              <option value="hipertensao">Hipertensão</option>
+              <option selected value="hipertensao">Hipertensão</option>
               <option value="refluxo">Refluxo</option>
               <option value="tetraplegia">Tetraplegia ou Paraplegia</option>
               <option value="outros">Outros</option>
@@ -74,12 +74,11 @@
             </select>
           </div>
 
-          <div>
+          <div class="form-group">
             <p>
-              Quais outras medidas você defende evitar a contaminação por
-              Covid-19?
+              Quais outras medidas você pratica para evitar a contaminação por Covid-19?            
+              <span class="clue"> (marque todas as opções que você acredita) </span>
             </p>
-            <span> (marque todas as opções que você acredita) </span>
 
             <label>
               <input 
@@ -142,7 +141,7 @@
               ></textarea>
           </div>
 
-          <div>
+          <div class="form-group">
               <button type="submit" id="submit" class="submit-button">
                   Enviar
               </button>
@@ -151,8 +150,6 @@
         </form>
       </main>
     </div>
-
-    <footer></footer>
   </body>
 </html>
 
